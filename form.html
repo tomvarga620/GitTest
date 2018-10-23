@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+
+table{
+	
+border-collapse:collapse;
+font-family:Arial;
+font-size:15px;
+width:420px;
+
+}
+
+th {
+	
+height:35px;	
+font-size:24px;
+background:#CCC;
+font-weight:100;
+text-align:center;
+	
+}
+
+td {
+
+padding-top:3%;
+width:120px;
+padding-left:4%;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<form>
+<table>
+
+<tr>
+<th colspan="2">Registration</th>
+</tr>
+
+<tr>
+<td>Name:</td>
+<td><input type="text" name="text" placeholder="Enter your name"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="password" name="pass"></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="email" name="email"></td>
+</tr>
+
+<tr>
+<td>Date of Birth:</td>
+<td><input type="date" name="date"></td>
+</tr>
+
+<tr>
+<td>Grade:</td>
+<td><input type="text" name="grade"></td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" value="1" name="gender" checked>Male
+<br>
+<input type="radio" value="1" name="gender">Female
+</td>
+</tr>
+
+<tr>
+<td>Marital status:</td>
+<td>
+<input type="radio" value="1" name="status" checked>Single
+<br>
+<input type="radio" value="1" name="status">Married
+<br>
+<input type="radio" value="1" name="status">Divorced
+<br>
+<input type="radio" value="1" name="status">Widower
+</td>
+</tr>
+
+<tr>
+<td>Languages:</td>
+<td>
+<input type="checkbox" name="English" checked>English
+<br>
+<input type="checkbox" name="German">German
+<br>
+<input type="checkbox" name="Russian" checked>Russian
+<br>
+<input type="checkbox" name="Other">Other
+</td>
+</tr>
+
+<tr>
+<td>Nationality</td>
+<td>
+<select>
+<option selected>Slovak</option>
+<option>Russian</option>
+<option>German</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>About</td>
+<td>
+<textarea cols="30" rows="7" placeholder="text">Text</textarea>
+</td>
+</tr>
+
+<tr>
+<td>Your CV:</td>
+<td><input type="file" value="Vybrať súbor"></td>
+</tr>
+
+<tr>
+<td>Are you happy?</td>
+<td><div>no <input type="range" min="1" max="2"> yes</div></td>
+</tr>
+
+<tr>
+<td align="center"><input type="reset" value="Reset"></td>
+<td align="center"><input type="submit"value="Submit"></td>
+</tr>
+
+
+</table>
+</form>
+
+
+</body>
+</html>
