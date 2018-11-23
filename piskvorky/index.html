@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/script.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onLoad="startGame();">
+
+<div id="tableCenter">
+
+	<div id="message">Messages</div>
+	<table border="1">
+    <tr>
+    	<td class="Square" id="s1" onClick="nextMove(this)"></td>
+        <td class="Square" id="s2" onClick="nextMove(this)"></td>
+        <td class="Square" id="s3" onClick="nextMove(this)"></td>
+    </tr>
+    <tr>
+    	<td class="Square" id="s4" onClick="nextMove(this)"></td>
+        <td class="Square" id="s5" onClick="nextMove(this)"></td>
+        <td class="Square" id="s6" onClick="nextMove(this)"></td>
+    </tr>
+    <tr>
+    	<td class="Square" id="s7" onClick="nextMove(this)"></td>
+        <td class="Square" id="s8" onClick="nextMove(this)"></td>
+        <td class="Square" id="s9" onClick="nextMove(this)"></td>
+    </tr>
+    </table>
+    <a href="javascript: startGame();">Restart</a>
+    
+</div>
+
+</body>
+</html>
