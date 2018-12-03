@@ -73,12 +73,27 @@ margin-left:20px;
 <script>
 
 function getData(){
-	
+
+	let persons=[];
+
 	let fname=document.getElementById('fname').value;
 	let lname=document.getElementById('lname').value;
 	let age=document.getElementById('age').value;
 	let gender;
-	
+
+	let person = {
+
+	fname:fname,
+	lname:lname,
+	age:age,
+	gender:gender
+
+	};
+
+	console.log(person.lname);
+
+	persons.push(person);
+
 	if( fname == "" || lname == "" || age == "" || gender == ""){
 	alert("The form is incomplete");
         return false;
