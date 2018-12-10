@@ -111,6 +111,26 @@ background:red;
 
 }
 
+.blue:hover {
+
+background:blue;
+color:white;
+
+}
+
+.pink:hover {
+
+background:pink;
+color:white;
+
+}
+
+.white:hover {
+
+background:white;
+
+}
+
 </style>
 
 
@@ -254,6 +274,16 @@ function getData(){
         row.append(column3);
         row.append(column4);
         row.append(column5);
+
+        if(person.gender=='M'){
+        row.attr('class', 'blue');
+        }
+        else if(person.gender=='F'){
+        row.attr('class', 'pink');
+        } 
+        else{
+        row.attr('class', 'white');
+        }
         $('#tableResult').append(row);
         $('#fname').val('');
         $('#lname').val('');
